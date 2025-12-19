@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte du voyage - Bahamas</title>
+  <style>
+    body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    #map { height: 100vh; width: 100%; }
+    .info-window { max-width: 250px; font-family: Arial, sans-serif; }
+    .info-window img { width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px; }
+    .info-window h3 { margin: 0 0 5px 0; font-size: 16px; color: #333; }
+    .info-window p { margin: 5px 0; font-size: 14px; color: #666; }
+    .info-window a { color: #1a73e8; text-decoration: none; }
+    .info-window a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  
+  <script>
+    function initMap() {
+      const center = { lat: 24.532452966666668, lng: -76.7682914111111 };
+      const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: center
+      });
+      
+      const markers = [{"lat":25.0443312,"lng":-77.3503609,"name":"Nassau, New Providence","jour":1,"titre":"Arrivée en douceur à Nassau","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=25.0443312,-77.3503609&key=AIzaSyB5WUNvRC9eOjHRLt92fs4hsp0Auje3aAI","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=25.0443312,-77.3503609","aiImageUrl":"jour1.jpg"},{"lat":25.0821287,"lng":-77.3134431,"name":"Paradise Island, New Providence","jour":3,"titre":"Merveilles aquatiques et paradis insulaire","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=25.0821287,-77.3134431&key=AIzaSyB5WUNvRC9eOjHRLt92fs4hsp0Auje3aAI","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=25.0821287,-77.3134431","aiImageUrl":"jour3.jpg"},{"lat":23.5024411,"lng":-75.7700507,"name":"George Town, Great Exuma","jour":5,"titre":"Envol vers les Exumas et découverte de George Town","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=23.5024411,-75.7700507&key=AIzaSyB5WUNvRC9eOjHRLt92fs4hsp0Auje3aAI","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=23.5024411,-75.7700507","aiImageUrl":"jour5.jpg"},{"lat":23.5333333,"lng":-75.83333329999999,"name":"Exuma Cays","jour":6,"titre":"Aventure inoubliable aux Exuma Cays","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=23.5333333,-75.83333329999999&key=AIzaSyB5WUNvRC9eOjHRLt92fs4hsp0Auje3aAI","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=23.5333333,-75.83333329999999","aiImageUrl":"jour6.jpg"},{"lat":23.45,"lng":-75.6166667,"name":"Great et Little Exuma","jour":7,"titre":"Plages idylliques et exploration de Little Exuma","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=23.45,-75.6166667&key=AIzaSyB5WUNvRC9eOjHRLt92fs4hsp0Auje3aAI","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=23.45,-75.6166667","aiImageUrl":"jour7.jpg"},{"lat":23.5024411,"lng":-75.7700507,"name":"George Town, Great Exuma & Nassau","jour":8,"titre":"Activités nautiques et retour à Nassau","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=23.5024411,-75.7700507&key=AIzaSyB5WUNvRC9eOjHRLt92fs4hsp0Auje3aAI","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=23.5024411,-75.7700507","aiImageUrl":"jour8.jpg"},{"lat":26.5333159,"lng":-78.6429019,"name":"Freeport, Grand Bahama","jour":9,"titre":"Cap sur Grand Bahama et ambiance portuaire","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=26.5333159,-78.6429019&key=AIzaSyB5WUNvRC9eOjHRLt92fs4hsp0Auje3aAI","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=26.5333159,-78.6429019","aiImageUrl":"jour9.jpg"},{"lat":25.0443312,"lng":-77.3503609,"name":"Freeport, Grand Bahama & Nassau","jour":12,"titre":"Jardins tropicaux et retour à Nassau","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=25.0443312,-77.3503609&key=AIzaSyB5WUNvRC9eOjHRLt92fs4hsp0Auje3aAI","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=25.0443312,-77.3503609","aiImageUrl":"jour12.jpg"},{"lat":25.0997542,"lng":-77.2674545,"name":"Blue Lagoon Island, New Providence","jour":13,"titre":"Rencontre marine et relaxation insulaire","streetViewUrl":"https://maps.googleapis.com/maps/api/streetview?size=600x400&location=25.0997542,-77.2674545&key=AIzaSyB5WUNvRC9eOjHRLt92fs4hsp0Auje3aAI","streetViewLinkUrl":"https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=25.0997542,-77.2674545","aiImageUrl":"jour13.jpg"}];
+      
+      markers.forEach((markerData) => {
+        const marker = new google.maps.Marker({
+          position: { lat: markerData.lat, lng: markerData.lng },
+          map: map,
+          title: markerData.name,
+          label: String(markerData.jour)
+        });
+        
+        const contentString = `
+          <div class="info-window">
+            <img src="${markerData.streetViewUrl}" alt="Street View de ${markerData.name}" />
+            <h3>Jour ${markerData.jour}</h3>
+            <p><strong>${markerData.name}</strong></p>
+            <p><a href="${markerData.streetViewLinkUrl}" target="_blank" rel="noopener noreferrer"><strong>${markerData.titre}</strong></a></p>
+          </div>
+        `;
+        
+        const infoWindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        
+        marker.addListener('click', () => {
+          infoWindow.open(map, marker);
+        });
+      });
+    }
+  </script>
+  
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5WUNvRC9eOjHRLt92fs4hsp0Auje3aAI&callback=initMap">
+  </script>
+</body>
+</html>
