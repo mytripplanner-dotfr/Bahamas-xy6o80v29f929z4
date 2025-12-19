@@ -1,0 +1,704 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évasion Turquoise aux Bahamas: 15 Jours de Rêve Caribéen </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée en douceur à Nassau</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Plongée dans l'histoire coloniale</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Merveilles aquatiques et paradis insulaire</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Nature, saveurs locales et culture bahamienne</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Envol vers les Exumas et découverte de George Town</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Aventure inoubliable aux Exuma Cays</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Plages idylliques et exploration de Little Exuma</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Activités nautiques et retour à Nassau</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Cap sur Grand Bahama et ambiance portuaire</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Nature sauvage et plages secrètes</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Immersion sous-marine et récifs coralliens</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Jardins tropicaux et retour à Nassau</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Rencontre marine et relaxation insulaire</a>
+            
+                <a href="#jour-14" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J14 Derniers plaisirs et adieux aux Bahamas</a>
+            
+                <a href="#jour-15" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J15 Départ des Bahamas</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">BAHAMAS</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Évasion Turquoise aux Bahamas: 15 Jours de Rêve Caribéen</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ Du 9 au 24 Janvier 2026</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 5200€</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 Environ 6h avec escale depuis Tessier, Haïti</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+      <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+      </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée en douceur à Nassau</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un voyage depuis Haïti, le premier jour est dédié à l'acclimatation et à la découverte des premières beautés de Nassau. Installez-vous confortablement et laissez-vous imprégner par l'ambiance décontractée des Caraïbes. Une balade légère le long de la plage sera parfaite pour débuter ce séjour paradisiaque.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛬 <strong>Arrivée à l'aéroport international de Nassau (NAS)</strong>: Récupérez vos bagages et prenez un taxi pour votre hôtel. Le trajet offre déjà un aperçu des paysages tropicaux.</li><li>🛏️ <strong>Installation à l'hôtel et détente</strong>: Prenez le temps de vous rafraîchir et de vous installer. Profitez des installations de l'hôtel pour un moment de repos bien mérité.</li><li>🚶‍♀️ <strong>Balade relaxante sur Cable Beach</strong>: Découvrez l'une des plages les plus célèbres de Nassau, avec son sable fin et ses eaux cristallines. C'est l'endroit idéal pour une première immersion douce.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ Conseil d'arrivée</p>
+                                <p class="text-gray-700">Les taxis sont facilement disponibles à l'aéroport. N'hésitez pas à négocier le prix avant de monter, bien que les tarifs soient souvent fixes pour les destinations populaires.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Plongée dans l'histoire coloniale</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, nous explorons le cœur historique de Nassau, où l'architecture coloniale et les récits de pirates se mêlent. Des forteresses imposantes aux escaliers emblématiques, chaque coin de rue raconte une histoire. Préparez-vous à remonter le temps et à découvrir le riche passé des Bahamas.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚶‍♂️ <strong>Visite du centre-ville historique</strong>: Flânez dans les rues colorées de Nassau, admirez les bâtiments coloniaux et imprégnez-vous de l'atmosphère locale. C'est le point de départ idéal pour comprendre l'héritage de l'île.</li><li>🏰 <strong>Exploration du Fort Fincastle et de l'Escalier de la Reine</strong>: Montez les 66 marches taillées à la main de l'Escalier de la Reine, puis découvrez le Fort Fincastle, offrant une vue panoramique imprenable sur la ville et l'océan.</li><li>🛍️ <strong>Découverte du Straw Market</strong>: Plongez dans l'ambiance vibrante de ce marché artisanal emblématique. Vous y trouverez des souvenirs uniques, des objets tressés à la main et des œuvres d'art locales.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Astuce culturelle</p>
+                                <p class="text-gray-700">L'Escalier de la Reine a été construit par des esclaves à la fin du XVIIIe siècle pour honorer la Reine Victoria. C'est un témoignage poignant de l'histoire bahamienne.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1"> bargaining Marchandage au Straw Market</p>
+                                <p class="text-gray-700">N'hésitez pas à marchander les prix au Straw Market, c'est une pratique courante et attendue par les vendeurs.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Merveilles aquatiques et paradis insulaire</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cette journée est dédiée à la découverte des splendeurs sous-marines et du luxe discret de Paradise Island. Entre aquariums géants et plages idylliques, préparez-vous à être émerveillé. C'est une immersion totale dans la beauté naturelle et architecturale des Bahamas.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🌊 <strong>Exploration de l'Aquarium The Dig à Atlantis Paradise Island</strong>: Admirez des milliers d'espèces marines dans cet aquarium spectaculaire, recréant l'ambiance de la cité perdue de l'Atlantide. C'est une expérience fascinante pour tous les âges.</li><li>🏖️ <strong>Détente sur Cabbage Beach</strong>: Profitez du sable blanc immaculé et des eaux turquoise de Cabbage Beach, l'une des plus belles plages de Paradise Island. Idéal pour la baignade et le farniente.</li><li>🚶‍♀️ <strong>Balade sur le port de plaisance d'Atlantis</strong>: Observez les yachts luxueux et l'architecture impressionnante d'Atlantis. Même sans séjourner à l'hôtel, l'ambiance est unique et vaut le détour.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚌 Transport vers Paradise Island</p>
+                                <p class="text-gray-700">Des taxis ou des "jitneys" (minibus locaux) sont disponibles pour se rendre à Paradise Island depuis Nassau. Les jitneys sont plus économiques.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Conseil photo</p>
+                                <p class="text-gray-700">Les jardins et les lagons d'Atlantis offrent de superbes opportunités photographiques, même si vous ne visitez pas le parc aquatique.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Nature, saveurs locales et culture bahamienne</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, nous plongeons dans la nature luxuriante des Bahamas et explorons ses saveurs authentiques. Des flamants roses dansants aux rhums locaux, cette journée est un festin pour les sens. Terminez par une immersion culinaire au cœur de la vie locale.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🌸 <strong>Visite des Ardastra Gardens, Zoo and Conservation Centre</strong>: Observez les célèbres flamants roses marchant au pas, ainsi que d'autres espèces animales et végétales endémiques des Bahamas. C'est une expérience unique et éducative.</li><li>🥃 <strong>Dégustation à la distillerie John Watling's</strong>: Découvrez le processus de fabrication du rhum bahamien dans cette distillerie historique. Une dégustation est souvent proposée, offrant un aperçu des saveurs locales.</li><li>🍽️ <strong>Dîner au Fish Fry d'Arawak Cay</strong>: Savourez des plats de fruits de mer frais et d'autres spécialités bahamiennes dans une ambiance animée et authentique. C'est l'endroit idéal pour goûter la vraie cuisine locale.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Horaire des flamants</p>
+                                <p class="text-gray-700">Vérifiez les horaires des défilés de flamants roses aux Ardastra Gardens pour ne pas manquer ce spectacle charmant.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌶️ Spécialités locales</p>
+                                <p class="text-gray-700">Au Fish Fry, essayez le "conch fritters" (beignets de conque) ou le "fried snapper" (vivaneau frit), des incontournables de la cuisine bahamienne.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Envol vers les Exumas et découverte de George Town</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Laissez derrière vous l'effervescence de Nassau pour les eaux turquoise et les îles préservées des Exumas. Un court vol vous mènera à George Town, la capitale de Great Exuma, où la tranquillité et la beauté naturelle règnent en maîtres. Préparez-vous à une immersion totale dans un décor de carte postale.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>✈️ <strong>Vol intérieur de Nassau à George Town (Exuma)</strong>: Prenez un vol matinal pour George Town. Le vol offre des vues aériennes spectaculaires sur les îles et les eaux peu profondes.</li><li>🛏️ <strong>Installation à l'hôtel à George Town</strong>: Une fois arrivé, installez-vous dans votre hébergement. Profitez de l'après-midi pour vous détendre et vous imprégner de l'ambiance paisible de l'île.</li><li>🚶‍♀️ <strong>Exploration du centre de George Town et de la plage de Jolly Hall</strong>: Découvrez le petit centre-ville de George Town, puis dirigez-vous vers Jolly Hall Beach pour une première baignade dans les eaux calmes et transparentes des Exumas.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🧳 Bagages pour vols intérieurs</p>
+                                <p class="text-gray-700">Les compagnies aériennes locales ont souvent des restrictions de poids plus strictes pour les bagages. Vérifiez les limites avant de voyager.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚗 Location de voiture</p>
+                                <p class="text-gray-700">Pour explorer Great Exuma à votre rythme, la location d'une voiture est recommandée. Les routes sont faciles à naviguer.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Aventure inoubliable aux Exuma Cays</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">C'est le jour de l'aventure ultime aux Exumas! Embarquez pour une excursion en bateau qui vous mènera à travers les célèbres Exuma Cays, où vous rencontrerez des cochons nageurs, des requins nourrices et explorerez des grottes sous-marines. Une journée riche en émotions et en découvertes.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚤 <strong>Excursion en bateau aux Swimming Pigs de Big Major Cay</strong>: Nagez avec les célèbres cochons des Bahamas dans leurs eaux turquoise. C'est une expérience unique et amusante, emblématique des Exumas.</li><li>🦈 <strong>Nage avec les requins nourrices à Compass Cay</strong>: Osez nager aux côtés de requins nourrices inoffensifs dans un lagon peu profond. Une rencontre fascinante avec la faune marine.</li><li>🤿 <strong>Snorkeling à Thunderball Grotto</strong>: Explorez cette grotte sous-marine spectaculaire, rendue célèbre par les films de James Bond. Ses jeux de lumière et sa vie marine sont à couper le souffle.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Protection solaire</p>
+                                <p class="text-gray-700">Pensez à la crème solaire biodégradable, un chapeau et des lunettes de soleil. La réverbération sur l'eau est intense.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍎 Nourrir les animaux</p>
+                                <p class="text-gray-700">Si vous nourrissez les cochons, utilisez des fruits et légumes frais. Évitez de les nourrir avec de la nourriture transformée ou de l'alcool.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Plages idylliques et exploration de Little Exuma</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après l'excitation de la veille, cette journée est dédiée à la détente sur des plages de rêve et à l'exploration des charmes plus discrets de Little Exuma. Laissez le temps s'arrêter et profitez de la sérénité des lieux. C'est l'occasion parfaite pour se ressourcer et admirer des paysages à couper le souffle.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>☀️ <strong>Détente sur Tropic of Cancer Beach</strong>: Passez la matinée sur cette plage immaculée, considérée comme l'une des plus belles des Bahamas. Son sable blanc et ses eaux turquoise sont parfaits pour la baignade et le farniente.</li><li>🚗 <strong>Exploration de Little Exuma</strong>: Traversez le pont pour découvrir Little Exuma, une île plus sauvage et moins développée. Arrêtez-vous dans les petits villages et profitez des vues panoramiques.</li><li>🍽️ <strong>Déjeuner au restaurant Santanna's Bar & Grill</strong>: Savourez un déjeuner décontracté dans ce restaurant local réputé pour ses plats de fruits de mer frais et son ambiance authentique, avec vue sur l'océan.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗺️ Orientation</p>
+                                <p class="text-gray-700">Tropic of Cancer Beach est bien indiquée. C'est un lieu public, mais souvent peu fréquenté, offrant une tranquillité appréciable.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💰 Monnaie locale</p>
+                                <p class="text-gray-700">La monnaie est le dollar bahamien (BSD), indexé sur le dollar américain (USD). Les deux sont acceptés partout.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Activités nautiques et retour à Nassau</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez d'une dernière matinée aux Exumas pour une activité nautique douce, explorant les eaux calmes d'Elizabeth Harbour. Ensuite, il sera temps de reprendre un vol pour Nassau, marquant la fin de cette parenthèse insulaire. Préparez-vous à retrouver l'animation de la capitale pour la suite de votre aventure.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛶 <strong>Kayak ou paddleboard dans Elizabeth Harbour</strong>: Louez un kayak ou un paddleboard pour explorer les eaux calmes et peu profondes d'Elizabeth Harbour. C'est une excellente façon de découvrir la côte à votre rythme.</li><li>🛍️ <strong>Achats de souvenirs locaux à George Town</strong>: Avant de partir, flânez dans les quelques boutiques de George Town pour trouver des souvenirs artisanaux des Exumas. Soutenez l'artisanat local.</li><li>✈️ <strong>Vol intérieur de George Town à Nassau</strong>: Reprenez un vol en fin d'après-midi pour Nassau. Installez-vous dans un nouvel hôtel ou retrouvez le précédent pour la nuit.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Planification du vol</p>
+                                <p class="text-gray-700">Assurez-vous de réserver votre vol de retour vers Nassau à l'avance, surtout en haute saison. Les places peuvent être limitées.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌅 Coucher de soleil</p>
+                                <p class="text-gray-700">Si le temps le permet, essayez d'admirer un dernier coucher de soleil sur les Exumas avant votre départ, c'est magique.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Cap sur Grand Bahama et ambiance portuaire</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après les Exumas, une nouvelle île vous attend: Grand Bahama. Un vol rapide vous mènera à Freeport, où vous découvrirez une atmosphère différente, plus axée sur la nature et les activités. Commencez par explorer le vibrant Port Lucaya Marketplace, un lieu de vie et de divertissement.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>✈️ <strong>Vol intérieur de Nassau à Freeport (Grand Bahama)</strong>: Prenez un vol matinal pour Freeport. Le trajet est court et offre encore de belles vues sur l'archipel.</li><li>🛏️ <strong>Installation à l'hôtel à Freeport</strong>: Une fois arrivé, déposez vos affaires et préparez-vous à explorer cette nouvelle île. Les hôtels à Freeport sont souvent proches des plages.</li><li>🛍️ <strong>Découverte du Port Lucaya Marketplace</strong>: Flânez dans ce marché coloré et animé, rempli de boutiques, de restaurants et de bars. C'est le cœur social de Freeport, idéal pour le dîner et les divertissements en soirée.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚕 Transport à Freeport</p>
+                                <p class="text-gray-700">Les taxis sont le moyen de transport le plus courant à Freeport. Des bus locaux (jitneys) existent mais sont moins fréquents que sur New Providence.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎶 Ambiance nocturne</p>
+                                <p class="text-gray-700">Le Port Lucaya Marketplace propose souvent des concerts live et des animations en soirée, créant une atmosphère festive.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Nature sauvage et plages secrètes</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, l'aventure vous mène au cœur de la nature préservée de Grand Bahama. Explorez des grottes sous-marines fascinantes et détendez-vous sur l'une des plages les plus isolées et magnifiques de l'île. C'est une journée pour se connecter avec la beauté brute des Bahamas.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🌿 <strong>Visite du Lucayan National Park</strong>: Explorez ce parc national unique, abritant l'un des plus grands systèmes de grottes sous-marines au monde. Des sentiers de promenade vous mènent à travers la mangrove et la forêt.</li><li>🏖️ <strong>Détente sur Gold Rock Beach</strong>: Après la visite du parc, profitez de Gold Rock Beach, une plage immaculée et souvent déserte, accessible depuis le parc. Ses bancs de sable à marée basse sont spectaculaires.</li><li>🚶‍♀️ <strong>Exploration des grottes de Ben's Cave et Burial Mound Cave</strong>: Descendez dans ces grottes fascinantes pour admirer les formations calcaires et les eaux cristallines. Une expérience unique pour les amateurs de spéléologie (accès facile).</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👟 Chaussures confortables</p>
+                                <p class="text-gray-700">Prévoyez des chaussures de marche confortables pour explorer les sentiers du Lucayan National Park et les grottes.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1"> tide Marée basse à Gold Rock Beach</p>
+                                <p class="text-gray-700">Renseignez-vous sur les horaires des marées pour profiter pleinement des bancs de sable étendus de Gold Rock Beach.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion sous-marine et récifs coralliens</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Grand Bahama est réputée pour ses sites de plongée et de snorkeling exceptionnels. Aujourd'hui, enfilez masque et tuba pour découvrir un monde sous-marin vibrant, peuplé de poissons colorés et de coraux. Que vous soyez débutant ou expérimenté, les eaux de Freeport vous réservent des merveilles.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🐠 <strong>Excursion de snorkeling ou de plongée sous-marine</strong>: Participez à une excursion pour explorer les récifs coralliens et la vie marine abondante de Grand Bahama. De nombreux opérateurs proposent des sorties adaptées à tous les niveaux.</li><li>🚤 <strong>Visite du site de l'épave de Theo's Wreck (depuis la surface)</strong>: Si vous faites du snorkeling, certains tours peuvent vous emmener près de l'épave de Theo's Wreck, un cargo coulé intentionnellement pour créer un récif artificiel, visible depuis la surface.</li><li>🍽️ <strong>Dîner de fruits de mer frais</strong>: Après une journée en mer, savourez un délicieux dîner de fruits de mer frais dans l'un des restaurants locaux de Freeport, mettant en valeur les prises du jour.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🤿 Équipement</p>
+                                <p class="text-gray-700">La plupart des excursions incluent l'équipement de snorkeling. Si vous avez votre propre masque et tuba, n'hésitez pas à l'apporter.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌊 Conditions météo</p>
+                                <p class="text-gray-700">Les conditions de mer peuvent varier. Choisissez un jour calme pour une meilleure visibilité et une expérience plus agréable.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Jardins tropicaux et retour à Nassau</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Avant de quitter Grand Bahama, explorez un havre de paix floral, puis profitez d'une dernière plage. L'après-midi sera consacrée au retour vers Nassau, bouclant ainsi la boucle de votre exploration des îles. Préparez-vous à retrouver l'ambiance de la capitale pour les derniers jours de votre séjour.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🌷 <strong>Visite du Garden of the Groves</strong>: Promenez-vous dans ces magnifiques jardins botaniques, abritant une grande variété de plantes tropicales, d'oiseaux et de cascades. C'est un lieu de sérénité et de beauté.</li><li>🏖️ <strong>Détente sur Taino Beach</strong>: Profitez d'une dernière matinée sur une plage de Freeport, comme Taino Beach, connue pour ses eaux calmes et ses installations. Idéal pour un dernier bain de soleil.</li><li>✈️ <strong>Vol intérieur de Freeport à Nassau</strong>: Reprenez un vol en fin d'après-midi pour Nassau. Installez-vous dans votre hôtel pour les deux dernières nuits de votre voyage.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🦋 Faune des jardins</p>
+                                <p class="text-gray-700">Le Garden of the Groves est également un sanctuaire pour les oiseaux et les papillons, offrant de belles opportunités d'observation.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1"> souvenir Derniers achats</p>
+                                <p class="text-gray-700">Si vous n'avez pas trouvé votre bonheur au Port Lucaya Marketplace, quelques boutiques sont disponibles à l'aéroport de Freeport.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Rencontre marine et relaxation insulaire</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Pour cette avant-dernière journée, échappez à l'agitation de Nassau pour une île privée paradisiaque. Blue Lagoon Island offre une expérience unique de rencontre avec la faune marine et de pure détente sur ses plages immaculées. C'est une journée pour créer des souvenirs inoubliables.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚤 <strong>Excursion à Blue Lagoon Island</strong>: Prenez un ferry pour cette île privée idyllique. Profitez de ses plages, de ses activités nautiques et de son ambiance relaxante. C'est une évasion parfaite.</li><li>🐬 <strong>Rencontre avec les dauphins ou les otaries (optionnel)</strong>: Blue Lagoon Island est réputée pour ses programmes d'interaction avec les dauphins et les otaries. Une expérience mémorable si votre budget le permet.</li><li>🏖️ <strong>Détente sur les plages de Blue Lagoon Island</strong>: Baignez-vous dans les eaux cristallines, bronzez sur le sable blanc ou participez à des activités comme le paddleboard ou le kayak. L'île est un véritable havre de paix.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1"> booking Réservation à l'avance</p>
+                                <p class="text-gray-700">Les excursions à Blue Lagoon Island sont très populaires. Il est fortement recommandé de réserver vos billets à l'avance, surtout pour les interactions avec les animaux.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🥪 Repas sur l'île</p>
+                                <p class="text-gray-700">Des options de restauration sont disponibles sur Blue Lagoon Island, souvent incluses dans les forfaits d'excursion ou disponibles à l'achat.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-14" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 14</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers plaisirs et adieux aux Bahamas</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">C'est votre dernière journée complète aux Bahamas. Profitez-en pour faire les derniers achats de souvenirs, vous imprégner une dernière fois de l'ambiance caribéenne et savourer un dîner d'adieu mémorable. Une journée pour graver les derniers instants de ce voyage inoubliable.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛍️ <strong>Achats de dernière minute et souvenirs</strong>: Retournez au Straw Market ou explorez les boutiques de Bay Street pour trouver les derniers souvenirs et cadeaux. Rhum, artisanat local, bijoux sont des options populaires.</li><li>🏖️ <strong>Dernière baignade sur une plage de Nassau</strong>: Profitez d'une dernière baignade rafraîchissante sur une plage locale, comme Junkanoo Beach, facilement accessible depuis le centre-ville. C'est l'occasion de dire au revoir aux eaux turquoise.</li><li>🍽️ <strong>Dîner d'adieu dans un restaurant avec vue sur mer</strong>: Offrez-vous un dîner spécial dans un restaurant offrant une vue imprenable sur l'océan, pour clôturer votre séjour en beauté. Savourez les saveurs locales une dernière fois.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour14.jpg" class="w-full h-64 object-cover" alt="Jour 14">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">✈️ Préparation du départ</p>
+                                <p class="text-gray-700">Vérifiez les horaires de votre vol de retour et assurez-vous que vos bagages sont prêts. Prévoyez un temps suffisant pour le trajet vers l'aéroport.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1"> tips Pourboires</p>
+                                <p class="text-gray-700">Les pourboires sont appréciés aux Bahamas, généralement 15-20% dans les restaurants et pour les services. Certains établissements incluent déjà les frais de service.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-15" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 15</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ des Bahamas</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après 15 jours d'aventures et de détente sous le soleil des Bahamas, il est temps de prendre le chemin du retour. Emportez avec vous des souvenirs inoubliables de plages de sable blanc, d'eaux cristallines et de rencontres uniques. Les Bahamas vous attendront pour une prochaine évasion.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛏️ <strong>Petit-déjeuner et check-out de l'hôtel</strong>: Profitez d'un dernier petit-déjeuner bahamien avant de finaliser votre départ de l'hôtel.</li><li>🚕 <strong>Transfert vers l'aéroport international de Nassau (NAS)</strong>: Prenez un taxi pour l'aéroport, en prévoyant suffisamment de temps pour les formalités d'enregistrement et de sécurité.</li><li>🛫 <strong>Vol de retour vers Tessier, Haïti</strong>: Embarquez pour votre vol de retour, la tête pleine de merveilleux souvenirs des îles.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bahamas-xy6o80v29f929z4/main/jour15.jpg" class="w-full h-64 object-cover" alt="Jour 15">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛂 Formalités de départ</p>
+                                <p class="text-gray-700">Assurez-vous d'avoir tous vos documents de voyage (passeport, billets d'avion) à portée de main pour les contrôles à l'aéroport.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>750€/pers (Vol A/R Port-au-Prince - Nassau avec escale en classe économique)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>600€/pers (Taxis, ferries, 3 vols intérieurs inter-îles)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>980€/pers (15 jours à 65€/jour en moyenne, restaurants locaux et occasionnels)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>2350€/pers (14 nuits en hôtel 3 étoiles à 168€/nuit en moyenne)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>520€/pers (Excursions aux Exumas, parcs, musées, snorkeling)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Les périodes idéales pour ce séjour sont les mois de Décembre à Mai.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🤝 La population bahamienne est majoritairement d'origine africaine, avec une forte influence culturelle caribéenne et américaine. L'hospitalité est une valeur clé.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🏝️ Les Bahamas sont un archipel de plus de 700 îles et îlots, dont seulement une trentaine sont habitées. La capitale est Nassau, située sur l'île de New Providence.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🐖 Fait insolite: Les Bahamas sont l'un des rares endroits au monde où l'on peut nager avec des cochons sauvages, une attraction unique aux Exumas.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🗣️ La langue officielle est l'anglais. La monnaie est le dollar bahamien (BSD), indexé sur le dollar américain (USD), qui est accepté partout.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Bahamas-xy6o80v29f929z4/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.bahamas.com/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Bahamas.com</strong></a></li>
+                    
+                        <li><a href="https://www.bahamasair.com/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>✈️ Bahamasair</strong></a></li>
+                    
+                        <li><a href="https://www.weather.com/weather/today/l/BFXX0005:1:BF" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Météo Bahamas</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
