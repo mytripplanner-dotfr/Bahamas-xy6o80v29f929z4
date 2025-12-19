@@ -1,0 +1,449 @@
+{
+  "pays": "Bahamas",
+  "drapeau": "🇧🇸",
+  "symbole": "🌴",
+  "titre": "Évasion Turquoise aux Bahamas: 15 Jours de Rêve Caribéen",
+  "budget_total": "5200€",
+  "duree": "15 jours",
+  "date_debut": "2026-01-09",
+  "date_fin": "2026-01-24",
+  "temps_vol": "Environ 6h avec escale depuis Tessier, Haïti",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée en douceur à Nassau",
+      "legende": "Après un voyage depuis Haïti, le premier jour est dédié à l'acclimatation et à la découverte des premières beautés de Nassau. Installez-vous confortablement et laissez-vous imprégner par l'ambiance décontractée des Caraïbes. Une balade légère le long de la plage sera parfaite pour débuter ce séjour paradisiaque.",
+      "lieu": "Nassau, New Providence",
+      "activites": [
+        "🛬 <strong>Arrivée à l'aéroport international de Nassau (NAS)</strong>: Récupérez vos bagages et prenez un taxi pour votre hôtel. Le trajet offre déjà un aperçu des paysages tropicaux.",
+        "🛏️ <strong>Installation à l'hôtel et détente</strong>: Prenez le temps de vous rafraîchir et de vous installer. Profitez des installations de l'hôtel pour un moment de repos bien mérité.",
+        "🚶‍♀️ <strong>Balade relaxante sur Cable Beach</strong>: Découvrez l'une des plages les plus célèbres de Nassau, avec son sable fin et ses eaux cristallines. C'est l'endroit idéal pour une première immersion douce."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Conseil d'arrivée",
+          "texte": "Les taxis sont facilement disponibles à l'aéroport. N'hésitez pas à négocier le prix avant de monter, bien que les tarifs soient souvent fixes pour les destinations populaires."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🏛️",
+      "titre": "Plongée dans l'histoire coloniale",
+      "legende": "Aujourd'hui, nous explorons le cœur historique de Nassau, où l'architecture coloniale et les récits de pirates se mêlent. Des forteresses imposantes aux escaliers emblématiques, chaque coin de rue raconte une histoire. Préparez-vous à remonter le temps et à découvrir le riche passé des Bahamas.",
+      "lieu": "Nassau, New Providence",
+      "activites": [
+        "🚶‍♂️ <strong>Visite du centre-ville historique</strong>: Flânez dans les rues colorées de Nassau, admirez les bâtiments coloniaux et imprégnez-vous de l'atmosphère locale. C'est le point de départ idéal pour comprendre l'héritage de l'île.",
+        "🏰 <strong>Exploration du Fort Fincastle et de l'Escalier de la Reine</strong>: Montez les 66 marches taillées à la main de l'Escalier de la Reine, puis découvrez le Fort Fincastle, offrant une vue panoramique imprenable sur la ville et l'océan.",
+        "🛍️ <strong>Découverte du Straw Market</strong>: Plongez dans l'ambiance vibrante de ce marché artisanal emblématique. Vous y trouverez des souvenirs uniques, des objets tressés à la main et des œuvres d'art locales."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Astuce culturelle",
+          "texte": "L'Escalier de la Reine a été construit par des esclaves à la fin du XVIIIe siècle pour honorer la Reine Victoria. C'est un témoignage poignant de l'histoire bahamienne."
+        },
+        {
+          "symbole": " bargaining",
+          "titre": "Marchandage au Straw Market",
+          "texte": "N'hésitez pas à marchander les prix au Straw Market, c'est une pratique courante et attendue par les vendeurs."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🐠",
+      "titre": "Merveilles aquatiques et paradis insulaire",
+      "legende": "Cette journée est dédiée à la découverte des splendeurs sous-marines et du luxe discret de Paradise Island. Entre aquariums géants et plages idylliques, préparez-vous à être émerveillé. C'est une immersion totale dans la beauté naturelle et architecturale des Bahamas.",
+      "lieu": "Paradise Island, New Providence",
+      "activites": [
+        "🌊 <strong>Exploration de l'Aquarium The Dig à Atlantis Paradise Island</strong>: Admirez des milliers d'espèces marines dans cet aquarium spectaculaire, recréant l'ambiance de la cité perdue de l'Atlantide. C'est une expérience fascinante pour tous les âges.",
+        "🏖️ <strong>Détente sur Cabbage Beach</strong>: Profitez du sable blanc immaculé et des eaux turquoise de Cabbage Beach, l'une des plus belles plages de Paradise Island. Idéal pour la baignade et le farniente.",
+        "🚶‍♀️ <strong>Balade sur le port de plaisance d'Atlantis</strong>: Observez les yachts luxueux et l'architecture impressionnante d'Atlantis. Même sans séjourner à l'hôtel, l'ambiance est unique et vaut le détour."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "🚌",
+          "titre": "Transport vers Paradise Island",
+          "texte": "Des taxis ou des \"jitneys\" (minibus locaux) sont disponibles pour se rendre à Paradise Island depuis Nassau. Les jitneys sont plus économiques."
+        },
+        {
+          "symbole": "📸",
+          "titre": "Conseil photo",
+          "texte": "Les jardins et les lagons d'Atlantis offrent de superbes opportunités photographiques, même si vous ne visitez pas le parc aquatique."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🦜",
+      "titre": "Nature, saveurs locales et culture bahamienne",
+      "legende": "Aujourd'hui, nous plongeons dans la nature luxuriante des Bahamas et explorons ses saveurs authentiques. Des flamants roses dansants aux rhums locaux, cette journée est un festin pour les sens. Terminez par une immersion culinaire au cœur de la vie locale.",
+      "lieu": "Nassau, New Providence",
+      "activites": [
+        "🌸 <strong>Visite des Ardastra Gardens, Zoo and Conservation Centre</strong>: Observez les célèbres flamants roses marchant au pas, ainsi que d'autres espèces animales et végétales endémiques des Bahamas. C'est une expérience unique et éducative.",
+        "🥃 <strong>Dégustation à la distillerie John Watling's</strong>: Découvrez le processus de fabrication du rhum bahamien dans cette distillerie historique. Une dégustation est souvent proposée, offrant un aperçu des saveurs locales.",
+        "🍽️ <strong>Dîner au Fish Fry d'Arawak Cay</strong>: Savourez des plats de fruits de mer frais et d'autres spécialités bahamiennes dans une ambiance animée et authentique. C'est l'endroit idéal pour goûter la vraie cuisine locale."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "⏰",
+          "titre": "Horaire des flamants",
+          "texte": "Vérifiez les horaires des défilés de flamants roses aux Ardastra Gardens pour ne pas manquer ce spectacle charmant."
+        },
+        {
+          "symbole": "🌶️",
+          "titre": "Spécialités locales",
+          "texte": "Au Fish Fry, essayez le \"conch fritters\" (beignets de conque) ou le \"fried snapper\" (vivaneau frit), des incontournables de la cuisine bahamienne."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "✈️",
+      "titre": "Envol vers les Exumas et découverte de George Town",
+      "legende": "Laissez derrière vous l'effervescence de Nassau pour les eaux turquoise et les îles préservées des Exumas. Un court vol vous mènera à George Town, la capitale de Great Exuma, où la tranquillité et la beauté naturelle règnent en maîtres. Préparez-vous à une immersion totale dans un décor de carte postale.",
+      "lieu": "George Town, Great Exuma",
+      "activites": [
+        "✈️ <strong>Vol intérieur de Nassau à George Town (Exuma)</strong>: Prenez un vol matinal pour George Town. Le vol offre des vues aériennes spectaculaires sur les îles et les eaux peu profondes.",
+        "🛏️ <strong>Installation à l'hôtel à George Town</strong>: Une fois arrivé, installez-vous dans votre hébergement. Profitez de l'après-midi pour vous détendre et vous imprégner de l'ambiance paisible de l'île.",
+        "🚶‍♀️ <strong>Exploration du centre de George Town et de la plage de Jolly Hall</strong>: Découvrez le petit centre-ville de George Town, puis dirigez-vous vers Jolly Hall Beach pour une première baignade dans les eaux calmes et transparentes des Exumas."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🧳",
+          "titre": "Bagages pour vols intérieurs",
+          "texte": "Les compagnies aériennes locales ont souvent des restrictions de poids plus strictes pour les bagages. Vérifiez les limites avant de voyager."
+        },
+        {
+          "symbole": "🚗",
+          "titre": "Location de voiture",
+          "texte": "Pour explorer Great Exuma à votre rythme, la location d'une voiture est recommandée. Les routes sont faciles à naviguer."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "🐖",
+      "titre": "Aventure inoubliable aux Exuma Cays",
+      "legende": "C'est le jour de l'aventure ultime aux Exumas! Embarquez pour une excursion en bateau qui vous mènera à travers les célèbres Exuma Cays, où vous rencontrerez des cochons nageurs, des requins nourrices et explorerez des grottes sous-marines. Une journée riche en émotions et en découvertes.",
+      "lieu": "Exuma Cays",
+      "activites": [
+        "🚤 <strong>Excursion en bateau aux Swimming Pigs de Big Major Cay</strong>: Nagez avec les célèbres cochons des Bahamas dans leurs eaux turquoise. C'est une expérience unique et amusante, emblématique des Exumas.",
+        "🦈 <strong>Nage avec les requins nourrices à Compass Cay</strong>: Osez nager aux côtés de requins nourrices inoffensifs dans un lagon peu profond. Une rencontre fascinante avec la faune marine.",
+        "🤿 <strong>Snorkeling à Thunderball Grotto</strong>: Explorez cette grotte sous-marine spectaculaire, rendue célèbre par les films de James Bond. Ses jeux de lumière et sa vie marine sont à couper le souffle."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "☀️",
+          "titre": "Protection solaire",
+          "texte": "Pensez à la crème solaire biodégradable, un chapeau et des lunettes de soleil. La réverbération sur l'eau est intense."
+        },
+        {
+          "symbole": "🍎",
+          "titre": "Nourrir les animaux",
+          "texte": "Si vous nourrissez les cochons, utilisez des fruits et légumes frais. Évitez de les nourrir avec de la nourriture transformée ou de l'alcool."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🏖️",
+      "titre": "Plages idylliques et exploration de Little Exuma",
+      "legende": "Après l'excitation de la veille, cette journée est dédiée à la détente sur des plages de rêve et à l'exploration des charmes plus discrets de Little Exuma. Laissez le temps s'arrêter et profitez de la sérénité des lieux. C'est l'occasion parfaite pour se ressourcer et admirer des paysages à couper le souffle.",
+      "lieu": "Great et Little Exuma",
+      "activites": [
+        "☀️ <strong>Détente sur Tropic of Cancer Beach</strong>: Passez la matinée sur cette plage immaculée, considérée comme l'une des plus belles des Bahamas. Son sable blanc et ses eaux turquoise sont parfaits pour la baignade et le farniente.",
+        "🚗 <strong>Exploration de Little Exuma</strong>: Traversez le pont pour découvrir Little Exuma, une île plus sauvage et moins développée. Arrêtez-vous dans les petits villages et profitez des vues panoramiques.",
+        "🍽️ <strong>Déjeuner au restaurant Santanna's Bar & Grill</strong>: Savourez un déjeuner décontracté dans ce restaurant local réputé pour ses plats de fruits de mer frais et son ambiance authentique, avec vue sur l'océan."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🗺️",
+          "titre": "Orientation",
+          "texte": "Tropic of Cancer Beach est bien indiquée. C'est un lieu public, mais souvent peu fréquenté, offrant une tranquillité appréciable."
+        },
+        {
+          "symbole": "💰",
+          "titre": "Monnaie locale",
+          "texte": "La monnaie est le dollar bahamien (BSD), indexé sur le dollar américain (USD). Les deux sont acceptés partout."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🛶",
+      "titre": "Activités nautiques et retour à Nassau",
+      "legende": "Profitez d'une dernière matinée aux Exumas pour une activité nautique douce, explorant les eaux calmes d'Elizabeth Harbour. Ensuite, il sera temps de reprendre un vol pour Nassau, marquant la fin de cette parenthèse insulaire. Préparez-vous à retrouver l'animation de la capitale pour la suite de votre aventure.",
+      "lieu": "George Town, Great Exuma & Nassau",
+      "activites": [
+        "🛶 <strong>Kayak ou paddleboard dans Elizabeth Harbour</strong>: Louez un kayak ou un paddleboard pour explorer les eaux calmes et peu profondes d'Elizabeth Harbour. C'est une excellente façon de découvrir la côte à votre rythme.",
+        "🛍️ <strong>Achats de souvenirs locaux à George Town</strong>: Avant de partir, flânez dans les quelques boutiques de George Town pour trouver des souvenirs artisanaux des Exumas. Soutenez l'artisanat local.",
+        "✈️ <strong>Vol intérieur de George Town à Nassau</strong>: Reprenez un vol en fin d'après-midi pour Nassau. Installez-vous dans un nouvel hôtel ou retrouvez le précédent pour la nuit."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "⏰",
+          "titre": "Planification du vol",
+          "texte": "Assurez-vous de réserver votre vol de retour vers Nassau à l'avance, surtout en haute saison. Les places peuvent être limitées."
+        },
+        {
+          "symbole": "🌅",
+          "titre": "Coucher de soleil",
+          "texte": "Si le temps le permet, essayez d'admirer un dernier coucher de soleil sur les Exumas avant votre départ, c'est magique."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "✈️",
+      "titre": "Cap sur Grand Bahama et ambiance portuaire",
+      "legende": "Après les Exumas, une nouvelle île vous attend: Grand Bahama. Un vol rapide vous mènera à Freeport, où vous découvrirez une atmosphère différente, plus axée sur la nature et les activités. Commencez par explorer le vibrant Port Lucaya Marketplace, un lieu de vie et de divertissement.",
+      "lieu": "Freeport, Grand Bahama",
+      "activites": [
+        "✈️ <strong>Vol intérieur de Nassau à Freeport (Grand Bahama)</strong>: Prenez un vol matinal pour Freeport. Le trajet est court et offre encore de belles vues sur l'archipel.",
+        "🛏️ <strong>Installation à l'hôtel à Freeport</strong>: Une fois arrivé, déposez vos affaires et préparez-vous à explorer cette nouvelle île. Les hôtels à Freeport sont souvent proches des plages.",
+        "🛍️ <strong>Découverte du Port Lucaya Marketplace</strong>: Flânez dans ce marché coloré et animé, rempli de boutiques, de restaurants et de bars. C'est le cœur social de Freeport, idéal pour le dîner et les divertissements en soirée."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🚕",
+          "titre": "Transport à Freeport",
+          "texte": "Les taxis sont le moyen de transport le plus courant à Freeport. Des bus locaux (jitneys) existent mais sont moins fréquents que sur New Providence."
+        },
+        {
+          "symbole": "🎶",
+          "titre": "Ambiance nocturne",
+          "texte": "Le Port Lucaya Marketplace propose souvent des concerts live et des animations en soirée, créant une atmosphère festive."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🌳",
+      "titre": "Nature sauvage et plages secrètes",
+      "legende": "Aujourd'hui, l'aventure vous mène au cœur de la nature préservée de Grand Bahama. Explorez des grottes sous-marines fascinantes et détendez-vous sur l'une des plages les plus isolées et magnifiques de l'île. C'est une journée pour se connecter avec la beauté brute des Bahamas.",
+      "lieu": "Freeport, Grand Bahama",
+      "activites": [
+        "🌿 <strong>Visite du Lucayan National Park</strong>: Explorez ce parc national unique, abritant l'un des plus grands systèmes de grottes sous-marines au monde. Des sentiers de promenade vous mènent à travers la mangrove et la forêt.",
+        "🏖️ <strong>Détente sur Gold Rock Beach</strong>: Après la visite du parc, profitez de Gold Rock Beach, une plage immaculée et souvent déserte, accessible depuis le parc. Ses bancs de sable à marée basse sont spectaculaires.",
+        "🚶‍♀️ <strong>Exploration des grottes de Ben's Cave et Burial Mound Cave</strong>: Descendez dans ces grottes fascinantes pour admirer les formations calcaires et les eaux cristallines. Une expérience unique pour les amateurs de spéléologie (accès facile)."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "👟",
+          "titre": "Chaussures confortables",
+          "texte": "Prévoyez des chaussures de marche confortables pour explorer les sentiers du Lucayan National Park et les grottes."
+        },
+        {
+          "symbole": " tide",
+          "titre": "Marée basse à Gold Rock Beach",
+          "texte": "Renseignez-vous sur les horaires des marées pour profiter pleinement des bancs de sable étendus de Gold Rock Beach."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": " dive",
+      "titre": "Immersion sous-marine et récifs coralliens",
+      "legende": "Grand Bahama est réputée pour ses sites de plongée et de snorkeling exceptionnels. Aujourd'hui, enfilez masque et tuba pour découvrir un monde sous-marin vibrant, peuplé de poissons colorés et de coraux. Que vous soyez débutant ou expérimenté, les eaux de Freeport vous réservent des merveilles.",
+      "lieu": "Freeport, Grand Bahama",
+      "activites": [
+        "🐠 <strong>Excursion de snorkeling ou de plongée sous-marine</strong>: Participez à une excursion pour explorer les récifs coralliens et la vie marine abondante de Grand Bahama. De nombreux opérateurs proposent des sorties adaptées à tous les niveaux.",
+        "🚤 <strong>Visite du site de l'épave de Theo's Wreck (depuis la surface)</strong>: Si vous faites du snorkeling, certains tours peuvent vous emmener près de l'épave de Theo's Wreck, un cargo coulé intentionnellement pour créer un récif artificiel, visible depuis la surface.",
+        "🍽️ <strong>Dîner de fruits de mer frais</strong>: Après une journée en mer, savourez un délicieux dîner de fruits de mer frais dans l'un des restaurants locaux de Freeport, mettant en valeur les prises du jour."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "🤿",
+          "titre": "Équipement",
+          "texte": "La plupart des excursions incluent l'équipement de snorkeling. Si vous avez votre propre masque et tuba, n'hésitez pas à l'apporter."
+        },
+        {
+          "symbole": "🌊",
+          "titre": "Conditions météo",
+          "texte": "Les conditions de mer peuvent varier. Choisissez un jour calme pour une meilleure visibilité et une expérience plus agréable."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "🌺",
+      "titre": "Jardins tropicaux et retour à Nassau",
+      "legende": "Avant de quitter Grand Bahama, explorez un havre de paix floral, puis profitez d'une dernière plage. L'après-midi sera consacrée au retour vers Nassau, bouclant ainsi la boucle de votre exploration des îles. Préparez-vous à retrouver l'ambiance de la capitale pour les derniers jours de votre séjour.",
+      "lieu": "Freeport, Grand Bahama & Nassau",
+      "activites": [
+        "🌷 <strong>Visite du Garden of the Groves</strong>: Promenez-vous dans ces magnifiques jardins botaniques, abritant une grande variété de plantes tropicales, d'oiseaux et de cascades. C'est un lieu de sérénité et de beauté.",
+        "🏖️ <strong>Détente sur Taino Beach</strong>: Profitez d'une dernière matinée sur une plage de Freeport, comme Taino Beach, connue pour ses eaux calmes et ses installations. Idéal pour un dernier bain de soleil.",
+        "✈️ <strong>Vol intérieur de Freeport à Nassau</strong>: Reprenez un vol en fin d'après-midi pour Nassau. Installez-vous dans votre hôtel pour les deux dernières nuits de votre voyage."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "🦋",
+          "titre": "Faune des jardins",
+          "texte": "Le Garden of the Groves est également un sanctuaire pour les oiseaux et les papillons, offrant de belles opportunités d'observation."
+        },
+        {
+          "symbole": " souvenir",
+          "titre": "Derniers achats",
+          "texte": "Si vous n'avez pas trouvé votre bonheur au Port Lucaya Marketplace, quelques boutiques sont disponibles à l'aéroport de Freeport."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "🐬",
+      "titre": "Rencontre marine et relaxation insulaire",
+      "legende": "Pour cette avant-dernière journée, échappez à l'agitation de Nassau pour une île privée paradisiaque. Blue Lagoon Island offre une expérience unique de rencontre avec la faune marine et de pure détente sur ses plages immaculées. C'est une journée pour créer des souvenirs inoubliables.",
+      "lieu": "Blue Lagoon Island, New Providence",
+      "activites": [
+        "🚤 <strong>Excursion à Blue Lagoon Island</strong>: Prenez un ferry pour cette île privée idyllique. Profitez de ses plages, de ses activités nautiques et de son ambiance relaxante. C'est une évasion parfaite.",
+        "🐬 <strong>Rencontre avec les dauphins ou les otaries (optionnel)</strong>: Blue Lagoon Island est réputée pour ses programmes d'interaction avec les dauphins et les otaries. Une expérience mémorable si votre budget le permet.",
+        "🏖️ <strong>Détente sur les plages de Blue Lagoon Island</strong>: Baignez-vous dans les eaux cristallines, bronzez sur le sable blanc ou participez à des activités comme le paddleboard ou le kayak. L'île est un véritable havre de paix."
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": " booking",
+          "titre": "Réservation à l'avance",
+          "texte": "Les excursions à Blue Lagoon Island sont très populaires. Il est fortement recommandé de réserver vos billets à l'avance, surtout pour les interactions avec les animaux."
+        },
+        {
+          "symbole": "🥪",
+          "titre": "Repas sur l'île",
+          "texte": "Des options de restauration sont disponibles sur Blue Lagoon Island, souvent incluses dans les forfaits d'excursion ou disponibles à l'achat."
+        }
+      ]
+    },
+    {
+      "jour": 14,
+      "symbole": "🎁",
+      "titre": "Derniers plaisirs et adieux aux Bahamas",
+      "legende": "C'est votre dernière journée complète aux Bahamas. Profitez-en pour faire les derniers achats de souvenirs, vous imprégner une dernière fois de l'ambiance caribéenne et savourer un dîner d'adieu mémorable. Une journée pour graver les derniers instants de ce voyage inoubliable.",
+      "lieu": "Nassau, New Providence",
+      "activites": [
+        "🛍️ <strong>Achats de dernière minute et souvenirs</strong>: Retournez au Straw Market ou explorez les boutiques de Bay Street pour trouver les derniers souvenirs et cadeaux. Rhum, artisanat local, bijoux sont des options populaires.",
+        "🏖️ <strong>Dernière baignade sur une plage de Nassau</strong>: Profitez d'une dernière baignade rafraîchissante sur une plage locale, comme Junkanoo Beach, facilement accessible depuis le centre-ville. C'est l'occasion de dire au revoir aux eaux turquoise.",
+        "🍽️ <strong>Dîner d'adieu dans un restaurant avec vue sur mer</strong>: Offrez-vous un dîner spécial dans un restaurant offrant une vue imprenable sur l'océan, pour clôturer votre séjour en beauté. Savourez les saveurs locales une dernière fois."
+      ],
+      "illustration": "jour14.jpg",
+      "encarts": [
+        {
+          "symbole": "✈️",
+          "titre": "Préparation du départ",
+          "texte": "Vérifiez les horaires de votre vol de retour et assurez-vous que vos bagages sont prêts. Prévoyez un temps suffisant pour le trajet vers l'aéroport."
+        },
+        {
+          "symbole": " tips",
+          "titre": "Pourboires",
+          "texte": "Les pourboires sont appréciés aux Bahamas, généralement 15-20% dans les restaurants et pour les services. Certains établissements incluent déjà les frais de service."
+        }
+      ]
+    },
+    {
+      "jour": 15,
+      "symbole": "🛫",
+      "titre": "Départ des Bahamas",
+      "legende": "Après 15 jours d'aventures et de détente sous le soleil des Bahamas, il est temps de prendre le chemin du retour. Emportez avec vous des souvenirs inoubliables de plages de sable blanc, d'eaux cristallines et de rencontres uniques. Les Bahamas vous attendront pour une prochaine évasion.",
+      "lieu": "Nassau, New Providence",
+      "activites": [
+        "🛏️ <strong>Petit-déjeuner et check-out de l'hôtel</strong>: Profitez d'un dernier petit-déjeuner bahamien avant de finaliser votre départ de l'hôtel.",
+        "🚕 <strong>Transfert vers l'aéroport international de Nassau (NAS)</strong>: Prenez un taxi pour l'aéroport, en prévoyant suffisamment de temps pour les formalités d'enregistrement et de sécurité.",
+        "🛫 <strong>Vol de retour vers Tessier, Haïti</strong>: Embarquez pour votre vol de retour, la tête pleine de merveilleux souvenirs des îles."
+      ],
+      "illustration": "jour15.jpg",
+      "encarts": [
+        {
+          "symbole": "🛂",
+          "titre": "Formalités de départ",
+          "texte": "Assurez-vous d'avoir tous vos documents de voyage (passeport, billets d'avion) à portée de main pour les contrôles à l'aéroport."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "750€/pers (Vol A/R Port-au-Prince - Nassau avec escale en classe économique)",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "600€/pers (Taxis, ferries, 3 vols intérieurs inter-îles)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "980€/pers (15 jours à 65€/jour en moyenne, restaurants locaux et occasionnels)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "2350€/pers (14 nuits en hôtel 3 étoiles à 168€/nuit en moyenne)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "520€/pers (Excursions aux Exumas, parcs, musées, snorkeling)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont les mois de Décembre à Mai.",
+      "symbole": "☀️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "La population bahamienne est majoritairement d'origine africaine, avec une forte influence culturelle caribéenne et américaine. L'hospitalité est une valeur clé.",
+      "symbole": "🤝"
+    },
+    {
+      "titre": "Les Bahamas sont un archipel de plus de 700 îles et îlots, dont seulement une trentaine sont habitées. La capitale est Nassau, située sur l'île de New Providence.",
+      "symbole": "🏝️"
+    },
+    {
+      "titre": "Fait insolite: Les Bahamas sont l'un des rares endroits au monde où l'on peut nager avec des cochons sauvages, une attraction unique aux Exumas.",
+      "symbole": "🐖"
+    },
+    {
+      "titre": "La langue officielle est l'anglais. La monnaie est le dollar bahamien (BSD), indexé sur le dollar américain (USD), qui est accepté partout.",
+      "symbole": "🗣️"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Site officiel du tourisme des Bahamas",
+      "titre": "Bahamas.com",
+      "url": "https://www.bahamas.com/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Informations sur les vols intérieurs",
+      "titre": "Bahamasair",
+      "url": "https://www.bahamasair.com/",
+      "symbole": "✈️"
+    },
+    {
+      "legende": "Prévisions météo locales",
+      "titre": "Météo Bahamas",
+      "url": "https://www.weather.com/weather/today/l/BFXX0005:1:BF",
+      "symbole": "🌤️"
+    }
+  ]
+}
